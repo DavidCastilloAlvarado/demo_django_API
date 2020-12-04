@@ -1,0 +1,10 @@
+Include
+Lib
+Scripts
+**.cfg
+build
+Build
+db.sqlite3
+__pycache__
+migrations
+howto.md
