@@ -5,4 +5,4 @@ from datetime import datetime
 
 def view_customers(request):
     fecha_actual = datetime.now()
-    return render(request, "home.html", {"fechaactual": fecha_actual})
+    return render(request, "home.html", {"timenow": fecha_actual})
