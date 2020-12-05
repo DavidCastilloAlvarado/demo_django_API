@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{%block title%} Hola a todos {%endblock%}
+{%block title%} DemoAPI {%endblock%}
 
 {% block micontenido %}
 
@@ -8,16 +8,18 @@
 
   <div class="card-body">
     <h2 class="card-title">Home Web app</h2>
-    <p class="card-text">Demo app for consume customs APIs</p>
+    <p class="card-text">Demo app for custom APIs</p>
     <div class="p-2">
-      <a href="#" class="btn btn-primary">Listing Customers</a>
+      <a href="/swagger" class="btn btn-primary">Swagger View OpenAPI</a>
     </div>
     <div>
-      <a href="#" class="btn btn-success">Find Costumer</a>
+      <a href="/redoc" class="btn btn-success">Redoc View OpenAPI</a>
     </div>
 
   </div>
 
 </div>
+
+<!-- {%include "README.md" %} -->
 
 {%endblock%}

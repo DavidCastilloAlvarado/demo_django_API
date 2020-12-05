@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'apiapp',
     'webapp',
-    'googlemaps'
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
