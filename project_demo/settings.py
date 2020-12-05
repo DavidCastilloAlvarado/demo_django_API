@@ -26,6 +26,9 @@ SECRET_KEY = '$+9n(qaqapdjq+j*g5o5ahc_0+ddbdq0uz8)&!wgz7he1%rp+q'
 # Google APLI
 GCP_API_KEY = 'AIzaSyDKpi89I2bMbJIBtxukASftmpMF6PwtLZg'
 
+# Dir templates, absolute path
+DIR_TEMPLATES = "I:/Documentos/Gdrive/django/demoeng/webapp/template"
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -62,7 +65,7 @@ ROOT_URLCONF = 'project_demo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [DIR_TEMPLATES],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 
 class Customer(models.Model):
     first_name = models.CharField(max_length=100)
@@ -15,3 +13,6 @@ class Customer(models.Model):
         decimal_places=7, max_digits=15, default=-11.897072)
     longitude = models.DecimalField(
         decimal_places=7, max_digits=15, default=-77.0312574)
+
+    def __str__(self):
+        return self.first_name
