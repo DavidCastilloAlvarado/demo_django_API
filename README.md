@@ -64,10 +64,7 @@ In `settings.py`:
    INSTALLED_APPS = [
       ...
       # Google APLI KEY
-      GCP_API_KEY = 'AIzaSyDKpi89I2bMbJIBtxukASftmpMF6PwtLZg'
-      # Dir templates, absolute path
-      DIR_TEMPLATES = "I:/Documentos/Gdrive/django/demoeng/webapp/template"
-      ...
+      GCP_API_KEY = '..........'
    ]
 ```
 

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+from os import path as pathdir
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +28,7 @@ SECRET_KEY = '$+9n(qaqapdjq+j*g5o5ahc_0+ddbdq0uz8)&!wgz7he1%rp+q'
 GCP_API_KEY = 'AIzaSyDKpi89I2bMbJIBtxukASftmpMF6PwtLZg'
 
 # Dir templates, absolute path
-DIR_TEMPLATES = "I:/Documentos/Gdrive/django/demoeng/webapp/template"
+DIR_TEMPLATES = pathdir.join(BASE_DIR, "webapp", "template")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
