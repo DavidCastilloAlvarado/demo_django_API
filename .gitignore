@@ -6,7 +6,8 @@ build
 Build
 db.sqlite3
 __pycache__
-migrations
-!migrations/__init__.py
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
 howto.md
 customers.csv
