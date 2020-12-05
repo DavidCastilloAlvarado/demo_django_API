@@ -108,11 +108,11 @@ You can chose two view, swagger-ui or redoc
             Post method, it make a request using the parameter "id", then response (a single json) with the data of the customer with id == "id"
 
     <center>
-    <img src="imgs/post.PNG" alt="drawing" width="1000"/>
+    <img src="imgs/post.png" alt="drawing" width="1000"/>
     </center>
 
 4.  Redoc: Redoc: Only for documentation purpose
 
 <center>
-    <img src="imgs/redoc.PNG" alt="drawing" width="1000"/>
+    <img src="imgs/redoc.png" alt="drawing" width="1000"/>
     </center>
