@@ -1,13 +1,13 @@
 # Django demo project
 
-The project integrate 3 task
+The project integrates 3 tasks
 
-- django managament command to import customer.csv
+- django management command to import customer.csv to sql database
 - Rest API
 - - Get: listing all customers
-- - Post: getting one custumer by id
+- - Post: getting one customer by id
 - Webapp
-- - A simple webapp that consume this ResAPI, show documentation, builded with [django-yasg](https://github.com/axnsan12/drf-yasg)
+- - A simple webapp that consume this ResAPI, show documentation, autodoc [django-yasg](https://github.com/axnsan12/drf-yasg)
 
 <img src="imgs/yasg.PNG" alt="drawing" width="600"/>
 
@@ -43,13 +43,13 @@ The project integrate 3 task
 
         $cd demo_django_API
 
-2.  Install and active the enviorment (windows)
+2.  Install and active the environment (windows)
 
         $python -m pip install --user virtualenv
         $python -m venv .
         $.\Scripts\activate
 
-3.  Download all libreries requierements
+3.  Download all required libraries
 
         $pip install -r requirements.txt
 
@@ -71,18 +71,16 @@ In `settings.py`:
    ]
 ```
 
-2.  Make all migrations for run this proyects
+2.  Make all migrations for run this projects
 
         $python manage.py makemigrations
         $python manage.py migrate
 
-3.  Run server
-
-        $python manage.py runserver
-
 ## **Using**
 
-1.  **Management command**: Upload all the customers fields from a csv files, our dbmodel already know this fields. The command going to add to extra fields, latitude and longitud using [Places API ](https://developers.google.com/places/web-service/search#Fields) from google, specific [**Find places**](https://developers.google.com/places/web-service/search#FindPlaceRequests) end point base on city field.
+### _Management command_
+
+1.  Upload all the customers fields from a csv files, our dbmodel already know this fields. The command going to add to extra fields, latitude and longitude using [Places API ](https://developers.google.com/places/web-service/search#Fields) from google, specific [**Find places**](https://developers.google.com/places/web-service/search#FindPlaceRequests) end point base on city field.
 
             $python manage.py importcustomers path_file.csv
 
@@ -90,7 +88,11 @@ In `settings.py`:
     <img src="imgs/customers.PNG" alt="drawing" width="700"/>
     </center>
 
-### REST API / webapp
+### _REST API / webapp_
+
+1.  Run server
+
+        $python manage.py runserver
 
 2.  Home page:
 You can chose two view, swagger-ui or redoc
@@ -100,14 +102,20 @@ You can chose two view, swagger-ui or redoc
 
 3.  Swagger-ui: You can see two methods, get and post.
 
-              Get method going to return the whole list of customer saved on our data base.
+              Get method going to return the whole list of customers saved on our data base.
 
     <center>
     <img src="imgs/get.PNG" alt="drawing" width="1000"/>
     </center>
 
-            Post method, made a reques using the parameter "id", then response (a single json) with the data of the customer with id == "id"
+            Post method, it make a request using the parameter "id", then response (a single json) with the data of the customer with id == "id"
 
     <center>
     <img src="imgs/post.PNG" alt="drawing" width="1000"/>
+    </center>
+
+4.  Redoc: Redoc: Only for documentation purpose
+
+<center>
+    <img src="imgs/redoc.PNG" alt="drawing" width="1000"/>
     </center>
