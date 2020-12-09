@@ -1,6 +1,5 @@
 # Django demo project
-
-The project integrates 3 tasks
+The project integrates 3 tasks, django management commant and REST API in two modes, get and post.
 
 - django management command to import customer.csv to sql database
 - Rest API
